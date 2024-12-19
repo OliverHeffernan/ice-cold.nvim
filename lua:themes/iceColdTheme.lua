@@ -36,10 +36,6 @@ print("Theme created")  -- Debug print after creating theme
 
 local specs = lush.compile(theme)
 
-for group, colors in pairs(spec) do
-	vim.api.nvim_set_hl(0, group, colors)
-end
-
 print("Theme compiled")  -- Debug print after compiling
 
 return specs
