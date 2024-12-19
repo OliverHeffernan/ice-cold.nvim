@@ -1,4 +1,6 @@
+print("Theme file is being loaded")  -- Debug print at the very start
 local lush = require('lush')
+print("Lush loaded successfully")    -- Debug print after requiring lush
 local hsl = lush.hsl
 
 vim.cmd('hi clear')
@@ -30,22 +32,14 @@ local theme = lush(function()
 		StatusLine { bg = hsl(215, 35, 26) },
     }
 end)
+print("Theme created")  -- Debug print after creating theme
 
--- Build and apply the theme
-local function apply_theme()
-    if theme == nil then
-        error("Could not load theme")
-        return
-    end
-    
-    -- Apply the theme
-    local spec = lush.compile(theme)
-    for group, colors in pairs(spec) do
-        vim.api.nvim_set_hl(0, group, colors)
-    end
+local specs = lush.compile(theme)
+
+for group, colors in pairs(spec) do
+	vim.api.nvim_set_hl(0, group, colors)
 end
 
--- Apply the theme immediately
-apply_theme()
+print("Theme compiled")  -- Debug print after compiling
 
-return theme
+return specs
