@@ -1,5 +1,3 @@
--- Debug print at the very start
-
 -- Clear existing highlights
 vim.cmd('hi clear')
 
@@ -27,5 +25,3 @@ vim.api.nvim_set_hl(0, 'LineNr', { fg = '#4371AA' })
 vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#7B9FCB' })
 vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = '#16202D' })
 vim.api.nvim_set_hl(0, 'StatusLine', { bg = '#16202D' })
-
--- Debug print after setting the theme
