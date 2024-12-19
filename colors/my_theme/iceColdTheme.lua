@@ -1,6 +1,14 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
+vim.cmd('hi clear')
+if vim.fn.exists('syntax_on') then
+	vim.cmd('syntax reset')
+end
+
+vim.g.colors_name = 'iceColdTheme'
+
+
 local theme = lush(function()
     return {
 		-- programming groups here
