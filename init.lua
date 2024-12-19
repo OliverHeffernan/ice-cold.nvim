@@ -1,4 +1,7 @@
-local theme = require("my_theme.iceColdTheme")
-
--- Load your theme (assuming `setup` is the main function that applies your theme)
-vim.cmd[[colorscheme iceColdTheme]]
+return {
+	-- This function will be called when the colorscheme is loaded
+	setup = function(opts)
+		-- Load the actual colorscheme
+		require('colors.my_theme.iceColdTheme')
+	end
+}
