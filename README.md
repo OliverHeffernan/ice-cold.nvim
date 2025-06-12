@@ -5,7 +5,7 @@
 ![screenshot of theme in vue or html5](vueScreenshot.png)
 
 ## About
-This theme has primarily blue hues, but for some things, it felt necessary to retain their traditional colours. For example, strings should be orangey, functions green, and and operators red. This creates a blue look and feel to the theme, without sacrificing readability.
+This theme has primarily blue hues, but for some things, it felt necessary to retain their traditional colours. For example, strings should be orangey, functions green, and operators red. This creates a blue look and feel to the theme, without sacrificing readability.
 ## Installation
 This is a very simple theme, so does not require any plugin manager to install.
 
