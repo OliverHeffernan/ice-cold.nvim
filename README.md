@@ -1,6 +1,6 @@
 # Ice Cold Theme For Neovim
 ![screenshot of theme](screenshot.png)
-![screenshot of theme in vue/html5] (vueScreenshot.png)
+![screenshot of theme in vue or html5] (vueScreenshot.png)
 ## About
 This theme has primarily blue hues, but for some things, it felt necessary to retain their traditional colours. For example, strings should be orangey, functions green, and and operators red. This creates a blue look and feel to the theme, without sacrificing readability.
 ## Installation
